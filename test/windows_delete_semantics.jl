@@ -1,7 +1,7 @@
 # Windows deletion semantics tests for the libuv fork.
 #
 # Run with an existing Julia build (nightly works, no rebuild needed):
-#     julia --startup-file=no test/windows_delete_semantics.jl
+#     julia +nightly --startup-file=no test/windows_delete_semantics.jl
 #
 # These tests assert the DESIRED behavior of uv_fs_unlink on Windows:
 #   1. POSIX delete semantics: the name disappears from the namespace
